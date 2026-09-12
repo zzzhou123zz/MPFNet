@@ -9,14 +9,11 @@ from .yolov7_backbone import YOLOv7Backbone
 from .custom.custom import *
 from .custom.custom_csp_backbone import *
 from .custom.my_fusion_block import *
-from .custom.my_fusion_backbone import *
 from .custom.my_fusiondetector_loss import *
-from .custom.mkp_loss_backbone import *
 
 __all__ = [
     'YOLOv5CSPDarknet', 'BaseBackbone', 'YOLOv6EfficientRep', 'YOLOv6CSPBep',
     'YOLOXCSPDarknet', 'CSPNeXt', 'YOLOv7Backbone', 'PPYOLOECSPResNet',
     'YOLOv8CSPDarknet', 'Pzconv', 'YOLOv8CSPDarknetPzconv', 'PzconvCSPLayerWithTwoConv',
-    'PzconvBottleneck','FCM_DualInput','my_YOLODualFusionDetector',
-    'NegativeInfoNCELoss', 'PositiveGuidedInfoNCELoss', 'my_Detector_newloss',
+    'PzconvBottleneck', 'FCM_DualInput', 'my_fusiondetector_loss',
 ]
