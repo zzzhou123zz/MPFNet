@@ -6,8 +6,6 @@ from mmengine.registry import MODELS
 from mmcv.cnn import ConvModule
 from mmengine.model import BaseModule
 
-# ================== 修复并适配你的Pzconv卷积层 ==================
-
 class Conv(nn.Module):
     """标准卷积层 - 用于Pzconv内部"""
 
@@ -26,7 +24,7 @@ class Conv(nn.Module):
 
 
 class Pzconv(nn.Module):
-    """你的自定义Pzconv卷积层 - 修复版"""
+    "Pzconv卷积层"
 
     def __init__(self, dim, k=1, s=1, p=None, g=1, d=1, act=True):
         super().__init__()
@@ -47,11 +45,8 @@ class Pzconv(nn.Module):
         x6 = x5 + identity  # 残差连接
         return x6
 
-
-# ================== 适配YOLOv8的Pzconv包装层 ==================
-
 class PzconvModule(BaseModule):
-    """适配YOLOv8的Pzconv包装层"""
+    "适配YOLOv8的Pzconv包装层"
 
     def __init__(self,
                  in_channels: int,
@@ -106,7 +101,6 @@ class PzconvModule(BaseModule):
         return x
 
 class PzconvCSPLayerWithTwoConv(BaseModule):
-    """CSP层内部也使用Pzconv的版本"""
 
     def __init__(self,
                  in_channels: int,
@@ -145,7 +139,6 @@ class PzconvCSPLayerWithTwoConv(BaseModule):
 
 
 class PzconvBottleneck(nn.Module):
-    """使用Pzconv的Bottleneck块"""
 
     def __init__(self, in_channels, out_channels, add_identity=True):
         super().__init__()
