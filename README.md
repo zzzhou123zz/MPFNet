@@ -1,3 +1,9 @@
+# MPFNet
+
+A visible-light and infrared fusion object detection model based on mmyolo.
+
+---
+
 <div align="center">
   <img width="100%" src="https://user-images.githubusercontent.com/27466624/222385101-516e551c-49f5-480d-a135-4b24ee6dc308.png"/>
   <div>&nbsp;</div>
