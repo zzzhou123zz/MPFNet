@@ -1,0 +1,1 @@
+python projects/easydeploy/tools/export_onnx.py projects/yolo_dual/fire.py work_dirs/fire/best_coco_bbox_mAP_50_epoch_107.pth --work-dir work_dirs/fire --img-size 640 640 --batch 1 --device cuda:0 --simplify --opset 11 --backend ONNXRuntime --pre-topk 1000 --keep-topk 100 --iou-threshold 0.65 --score-threshold 0.25

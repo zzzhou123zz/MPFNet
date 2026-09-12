@@ -1,0 +1,1 @@
+python demo/featmap_vis_demo.py /data/nl/mmdet2spectral/data/FLIR/train/rgb projects/yolo_dual/FLIR/yolov8m_1xb16_FLIR_class3_dual_stream_newbaseline.py work_dirs/FLIR/yolov8m_1xb16_FLIR_class3_dual_stream_newbaseline/best_coco_bbox_mAP_50_epoch_39.pth --out-dir work_dirs/fea_vis/baseline --target-layers 'backbone2.stage3'

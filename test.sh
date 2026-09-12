@@ -1,0 +1,1 @@
+python tools/test.py projects/yolo_dual/FLIR/ablation/yolov5m_tir.py work_dirs/FLIR/ablation/yolov5m_tir/best_coco_bbox_mAP_50_epoch_110.pth --work-dir work_dirs/ablation

@@ -1,0 +1,1 @@
+python tools/test.py projects/yolo_dual/LLVIP/2024_10_08/yolov8m_1xb16_LLVIP_dual_stream_DMFF_WTConv_mw.py work_dirs/LLVIP/2024_10_08/yolov8m_1xb16_LLVIP_dual_stream_DMFF_WTConv_mw/best_coco_bbox_mAP_50_epoch_39.pth --work-dir work_dirs/LLVIP/2024_10_08/yolov8m_1xb16_LLVIP_dual_stream_DMFF_WTConv_mw
